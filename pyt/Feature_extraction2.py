@@ -1,4 +1,4 @@
-# 特征提取，最终除预测结果外选择 amount,volume,preclose和high
+# 特征提取2
 
 import pandas as pd
 import numpy as np
