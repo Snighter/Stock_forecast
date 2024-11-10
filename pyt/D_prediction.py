@@ -41,7 +41,7 @@ def load_all_files(directory):
 # 主程序
 if __name__ == "__main__":
     # 读取所有数据文件
-    directory = 'out/code_data'  # 假设存放数据的目录
+    directory = 'out/code_data'
     data_files = load_all_files(directory)
 
     output_directory = 'out/pre'

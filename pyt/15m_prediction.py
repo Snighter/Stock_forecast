@@ -69,7 +69,7 @@ def calculate_rmse(y_true, y_pred):
 
 # 读取目录中所有CSV文件
 def load_all_files(directory):
-    files = [f for f in os.listdir(directory) if f.endswith('15m_data.csv')]  # 或者根据需要改为特定的文件名模式
+    files = [f for f in os.listdir(directory) if f.endswith('15m_data.csv')]
     data_files = []
     for file in files:
         file_path = os.path.join(directory, file)

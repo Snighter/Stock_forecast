@@ -7,8 +7,6 @@ if __name__ == "__main__":
     # 读取股票代码
     si2 = pd.read_csv('out/codes/si_codes.csv')['code'].tolist()
     st2 = pd.read_csv('out/codes/st_codes.csv')['code'].tolist()
-    si2 = ['sh.000001']
-    st2 = ['sh.600000','sh.600028']  # 只使用一个股票代码进行测试
 
     # 存储所有股票的数据
     all_data = []
@@ -50,7 +48,7 @@ if __name__ == "__main__":
 
     # 列名
     columns = ['Stock Code']
-    for i in range(1, len(a) + 1):  # 假设a和b的行数相同
+    for i in range(1, len(a) + 1):
         columns.extend([f'Open{i}', f'Close{i}'])
 
     # 创建 DataFrame
