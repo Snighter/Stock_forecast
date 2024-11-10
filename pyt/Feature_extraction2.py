@@ -1,4 +1,4 @@
-# 特征提取2
+# 15m线特征提取
 
 import pandas as pd
 import numpy as np

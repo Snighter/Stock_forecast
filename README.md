@@ -87,3 +87,29 @@
 - 加权平均计算：对开盘价和收盘价的预测结果进行加权平均，30% 权重给日线预测，70% 权重给15分钟预测。
 
 - 将加权平均结果保存到文件中，便于后续查看和分析。
+
+### 10.程序介绍
+
+1. **Data_collection.py**  
+   - 数据收集:获取股票和指数的历史数据。
+
+2. **Data_preprocessing.py**  
+   - 数据预处理:检查缺失值、数据类型。
+
+3. **Stationarity_test.py**  
+   - 平稳性检验:执行 ADF 和 KPSS 检验，确认数据的平稳性。
+
+4. **Feature_extraction.py**  
+   - 日线特征提取
+
+5. **Feature_extraction2.py**  
+   - 15分钟线特征提取
+
+6. **D_prediction.py**  
+   - 日线数据的预测
+
+7. **15m_prediction.py**  
+   - 15分钟间隔数据的预测
+
+8. **Fin_prediction.py**  
+   - 最终预测模块，结合日线和15分钟预测结果，并生成最终的输出。 

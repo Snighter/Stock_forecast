@@ -1,4 +1,4 @@
-# 特征提取
+# 日线特征提取
 
 import pandas as pd
 import numpy as np
